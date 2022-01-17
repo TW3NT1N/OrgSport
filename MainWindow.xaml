@@ -28,10 +28,128 @@
         </Grid>
 
         <StackPanel Grid.Row="1">
-            <Button Content="Ы" Style="{DynamicResource ButtonMenuTransparent}"/>
-            <Button Content="ЫЫ" Style="{DynamicResource ButtonMenuTransparent}"/>
+            <Button Content="Соревнования" Style="{DynamicResource ButtonMenuTransparent}"/>
+            <Button Content="Судьи" Style="{DynamicResource ButtonMenuTransparent}"/>
+            <Button Content="Участники" Style="{DynamicResource ButtonMenuTransparent}"/>
         </StackPanel>
-        
-        <Image />
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+
+            <Border Style="{DynamicResource StandartBorder}">
+                <ScrollViewer>
+                    <StackPanel>
+                        <Border Style="{DynamicResource StandartBorder}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="0" Text="Название"/>
+                                <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="1" Text="Дисциплина"/>
+                                <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="2" Text="Статус"/>
+                                <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="3" Text="Дата и время"/>
+                            </Grid>
+                            
+                        </Border>
+
+                        <Border Style="{DynamicResource StandartBorder}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="0" Text="Название"/>
+                                <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="1" Text="Дисциплина"/>
+                                <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="2" Text="Статус"/>
+                                <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="3" Text="Дата и время"/>
+                                <TextBlock Style="{DynamicResource TextWin}" Grid.Row="4" Text="Победитель"/>
+                            </Grid>
+
+                        </Border>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+
+            <Button Content="Участники" Style="{DynamicResource ButtonMenuTransparent}" Grid.Row="1"/>
+            <ScrollViewer Grid.Column="1" Grid.RowSpan="2">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="0" Grid.ColumnSpan="2" Text="Название:"/>
+                    <TextBox Style="{DynamicResource TransparentBox}" Grid.Row="1" Grid.ColumnSpan="2"/>
+                    <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="2" Grid.ColumnSpan="2" Text="Дисциплина:"/>
+                    <ComboBox Style="{DynamicResource ComboTransparent}" Grid.Row="3" Grid.ColumnSpan="2"/>
+                    <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="4" Grid.ColumnSpan="2" Text="Статус:"/>
+                    <ComboBox Style="{DynamicResource ComboTransparent}" Grid.Row="5" Grid.ColumnSpan="2"/>
+                    <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="6" Grid.ColumnSpan="2" Text="Класс:"/>
+                    <ComboBox Style="{DynamicResource ComboTransparent}" Grid.Row="7" Grid.ColumnSpan="2"/>
+                    <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="8" Grid.ColumnSpan="2" Text="Организатор:"/>
+                    <TextBox Style="{DynamicResource TransparentBox}" Grid.Row="9" Grid.ColumnSpan="2"/>
+                    <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="10" Grid.ColumnSpan="2" Text="Возрастная группа:"/>
+                    <ComboBox Style="{DynamicResource ComboTransparent}" Grid.Row="11" Grid.ColumnSpan="2"/>
+                    <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="12" Grid.ColumnSpan="2" Text="Дата и время:"/>
+                    <DatePicker Style="{DynamicResource DatePickerStandart}" Grid.Row="13" Grid.ColumnSpan="2"/>
+                    <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="14" Grid.ColumnSpan="2" Text="Главный судья:"/>
+                    <ComboBox Style="{DynamicResource ComboTransparent}" Grid.Row="15" Grid.ColumnSpan="2"/>
+                    <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="16" Grid.ColumnSpan="2" Text="Главный секретарь:"/>
+                    <ComboBox Style="{DynamicResource ComboTransparent}" Grid.Row="17" Grid.ColumnSpan="2"/>
+                    <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="18" Grid.ColumnSpan="2" Text="Судья №1:"/>
+                    <ComboBox Style="{DynamicResource ComboTransparent}" Grid.Row="19" Grid.ColumnSpan="2"/>
+                    <TextBlock Style="{DynamicResource TextOnComp}" Grid.Row="20" Grid.ColumnSpan="2" Text="Судья №2:"/>
+                    <ComboBox Style="{DynamicResource ComboTransparent}" Grid.Row="21" Grid.ColumnSpan="2"/>
+                    <Image Grid.Row="22"/>
+                    <ScrollViewer Grid.Row="22" Grid.Column="1">
+                        <StackPanel>
+                            <TextBlock Style="{DynamicResource TextOnComp}" Text="ФИО участника"/>
+                        </StackPanel>
+                    </ScrollViewer>
+                    <Button Content="Изменить список" Style="{DynamicResource ButtonMenuTransparent}" Grid.Row="23" Grid.ColumnSpan="2"/>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
     </Grid>
+    
+    
 </Window>
