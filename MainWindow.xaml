@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sport"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Соревнования по стрельбе" Height="450" Width="800" Background="#0fa4d5" FontFamily="/Sport;component/#Inter">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <Rectangle Fill="#fafafa" Grid.ColumnSpan="2"/>
+            <Image Source="logo.png"/>
+            <TextBlock Text="Соревнования по стрельбе" Grid.Column="1" Style="{DynamicResource TextOnTitle}"/>
+        </Grid>
+
+        <StackPanel Grid.Row="1">
+            <Button Content="Ы" Style="{DynamicResource ButtonMenuTransparent}"/>
+            <Button Content="ЫЫ" Style="{DynamicResource ButtonMenuTransparent}"/>
+        </StackPanel>
         
+        <Image />
     </Grid>
 </Window>

@@ -1,0 +1,16 @@
+E:\Git\sport\Sport\bin\Debug\Sport.exe.config
+E:\Git\sport\Sport\bin\Debug\Sport.exe
+E:\Git\sport\Sport\bin\Debug\Sport.pdb
+E:\Git\sport\Sport\obj\Debug\Sport.csprojAssemblyReference.cache
+E:\Git\sport\Sport\obj\Debug\MainWindow.g.cs
+E:\Git\sport\Sport\obj\Debug\App.g.cs
+E:\Git\sport\Sport\obj\Debug\Sport_MarkupCompile.cache
+E:\Git\sport\Sport\obj\Debug\Sport_MarkupCompile.lref
+E:\Git\sport\Sport\obj\Debug\App.baml
+E:\Git\sport\Sport\obj\Debug\MainWindow.baml
+E:\Git\sport\Sport\obj\Debug\Sport.g.resources
+E:\Git\sport\Sport\obj\Debug\Sport.Properties.Resources.resources
+E:\Git\sport\Sport\obj\Debug\Sport.csproj.GenerateResource.cache
+E:\Git\sport\Sport\obj\Debug\Sport.csproj.CoreCompileInputs.cache
+E:\Git\sport\Sport\obj\Debug\Sport.exe
+E:\Git\sport\Sport\obj\Debug\Sport.pdb
