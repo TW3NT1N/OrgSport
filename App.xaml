@@ -172,6 +172,48 @@
             </Style.Setters>
         </Style>
 
+        <!-- Текст в результатах -->
+        <Style BasedOn="{StaticResource {x:Type TextBlock}}"
+            TargetType="TextBlock"
+           x:Key="TextOnRes">
+            <Style.Setters>
+                <Setter Property="Foreground" Value="#121010"/>
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Top"/>
+                <Setter Property="FontSize" Value="14"/>
+            </Style.Setters>
+        </Style>
+
+        <!-- Текст сумма результатов -->
+        <Style BasedOn="{StaticResource {x:Type TextBlock}}"
+            TargetType="TextBlock"
+           x:Key="TextOnSumRes">
+            <Style.Setters>
+                <Setter Property="Foreground" Value="#121010"/>
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="HorizontalAlignment" Value="Right"/>
+                <Setter Property="VerticalAlignment" Value="Top"/>
+                <Setter Property="FontSize" Value="14"/>
+            </Style.Setters>
+        </Style>
+
+        <!-- Число сумма результатов -->
+        <Style BasedOn="{StaticResource {x:Type TextBlock}}"
+            TargetType="TextBlock"
+           x:Key="NumSumRes">
+            <Style.Setters>
+                <Setter Property="Foreground" Value="#121010"/>
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+                <Setter Property="VerticalAlignment" Value="Top"/>
+                <Setter Property="FontSize" Value="14"/>
+            </Style.Setters>
+        </Style>
+
         <!-- Текст победителя -->
         <Style BasedOn="{StaticResource {x:Type TextBlock}}"
             TargetType="TextBlock"
